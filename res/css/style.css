@@ -1,0 +1,20 @@
+ #cookie {
+    width: 300px;
+}
+#counter{
+    text-align: center;
+    font-size: large;
+    transition: .3s ease;
+    cursor: pointer;
+}
+*{
+    background-color: purple;
+}
+
+div{
+    text-align: center;
+}
+#cookie:hover{
+    transition: 0.5 ease;
+    width: 350px;
+}
