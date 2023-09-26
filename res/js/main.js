@@ -10,6 +10,8 @@ let autoClickIncrease = 0;
 let autoclicker;
 let autoclickerCost = 100;
 
+
+
 autoClickerUpgrade.onclick = () => {
     if (numberOfCookies >= autoclickerCost){
         //odecist cookies
@@ -27,6 +29,7 @@ autoClickerUpgrade.onclick = () => {
         numberOfCookies += autoClickIncrease
             //aktualizovat odstavec
          counter.innerHTML = "FazCoins: " + numberOfCookies;
+         updateInfo()
         }, 1000);
     } 
 }
