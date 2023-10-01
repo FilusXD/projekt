@@ -1,23 +1,21 @@
  #cookie {
     width: 300px;
+    display: block;
+    margin: auto;
 }
 #counter{
     text-align: center;
     font-size: large;
     transition: .3s ease;
-    cursor: pointer;
     color: white;
 }
 *{
-    font-family: sans-serif;
+    font-family: 'VT323', monospace;
 }
 
-div{
-    text-align: center;
-}
 #cookie:hover{
     transition: 0.5 ease;
-    width: 350px;
+    width: 320px;
     cursor: pointer;
 }
 #clickUpgrade{
@@ -32,6 +30,14 @@ div{
     width: 150px;
 
 }
+#upgrade{
+    color: white;
+    margin-right: 8%;
+}
+div{
+    text-align: right;
+}
+
 body{
     background-image: url(../img/gc0igxz8f6351.png);
 }
