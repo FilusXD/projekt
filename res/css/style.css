@@ -22,6 +22,7 @@
     font-size: 20px;
     cursor: pointer;
     width: 142px;
+    margin-left: 5%;
 }
 
 #autoClickerUpgrade{
@@ -30,13 +31,26 @@
     width: 150px;
 
 }
+#autoClickerUpgrade2{
+    font-size: 20px;
+    cursor: pointer;
+    width: 150px;
+}
 #upgrade{
     color: white;
-    margin-right: 8%;
+    margin-left: 43%;
 }
-div{
-    text-align: right;
+
+#cookie-container{
+    text-align: center;
 }
+.upgrades-container{
+    border: 5px solid black;
+    background-color: blueviolet;
+    margin-right: 63%;
+}
+
+
 
 body{
     background-image: url(../img/gc0igxz8f6351.png);
