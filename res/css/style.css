@@ -11,6 +11,7 @@
 }
 *{
     font-family: 'VT323', monospace;
+    overflow: hidden;
 }
 
 #container{
@@ -35,6 +36,12 @@
     margin-left: 5%;
 }
 #clickUpgrade2{
+    font-size: 20px;
+    cursor: pointer;
+    width: 142px;
+    margin-left: 5%;
+}
+#clickUpgrade3{
     font-size: 20px;
     cursor: pointer;
     width: 142px;
@@ -73,15 +80,16 @@
     border: 5px solid black;
     background-color: blueviolet;
     float: left;
-    width: 500px;
+    width: 550px;
+
 }
 .upgrades-container2{
     border: 5px solid black;
     background-color: blueviolet;
     text-align: right;
-    margin-left: 64%;
+    margin-left: 60%;
     overflow: hidden;
-    width: 500px;
+    width: 550px;
 }
 
 

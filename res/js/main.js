@@ -12,7 +12,6 @@ let costOfClickUpgrade = 20;
 let costOfClickUpgrade2 = 750;
 let costOfClickUpgrade3 = 5000;
 let clickUpgradeIncrease = 1;
-let clickUpgradeIncrease2 = 1;
 let autoClickIncrease = 0;
 let autoClickIncrease2 = 0;
 let autoClickIncrease3 = 0;
@@ -93,31 +92,30 @@ cookie.onclick = () => {
 
 clickUpgrade.onclick = () => {
     if (numberOfCookies >= costOfClickUpgrade){
-        //odečteme cenu upgradu
-        // pocet susenek a odectu 20
         numberOfCookies -= costOfClickUpgrade;
         costOfClickUpgrade *= 2;
-        //aktualizace odstavce
         counter.innerText = "FazCoins: " + numberOfCookies;
-        //zvedneme pocet susenek na kliknutí
         clickUpgradeIncrease++;
     }
 };
 
 clickUpgrade2.onclick = () => {
     if (numberOfCookies >= costOfClickUpgrade2){
-        //odečteme cenu upgradu
-        // pocet susenek a odectu 20
         numberOfCookies -= costOfClickUpgrade2;
         costOfClickUpgrade2 *= 2;
-        //aktualizace odstavce
         counter.innerText = "FazCoins: " + numberOfCookies;
-        //zvedneme pocet susenek na kliknutí
-        clickUpgradeIncrease++;
-        clickUpgradeIncrease += 23;
+        clickUpgradeIncrease += 24;
     }
 };
 
+clickUpgrade3.onclick = () => {
+    if (numberOfCookies >= costOfClickUpgrade3){
+        numberOfCookies -= costOfClickUpgrade3;
+        costOfClickUpgrade2 *= 2;
+        counter.innerText = "FazCoins: " + numberOfCookies;
+        clickUpgradeIncrease += 199;
+    }
+};
 
 
 
