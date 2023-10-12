@@ -24,7 +24,7 @@ let autoclicker3Cost = 15000;
 autoClickerUpgrade3.onclick = () => {
     if (numberOfCookies >= autoclicker3Cost){
         numberOfCookies -= autoclicker3Cost;
-        autoclicker2Cost *= 2;
+        autoclicker3Cost *= 2;
         autoClickerUpgrade.innerText = "Buy Freddy: " + autoclicker3Cost;
         counter.innerHTML = "FazCoins: " + numberOfCookies;
         autoClickIncrease3++;
