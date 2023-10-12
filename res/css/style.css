@@ -1,7 +1,11 @@
+.cookie-container{
+    display: block;
+    text-align: center;
+}
  #cookie {
     width: 300px;
-    display: block;
-    margin: auto;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 #counter{
     text-align: center;
@@ -12,6 +16,7 @@
 *{
     font-family: 'VT323', monospace;
     overflow: hidden;
+    user-select: none;
 }
 
 #container{
