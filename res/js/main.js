@@ -6,6 +6,13 @@ const clickUpgrade3 = document.getElementById("clickUpgrade3");
 const autoClickerUpgrade = document.getElementById("autoClickerUpgrade");
 const autoClickerUpgrade2 = document.getElementById("autoClickerUpgrade2");
 const autoClickerUpgrade3 = document.getElementById("autoClickerUpgrade3");
+const micPrice = document.getElementById("micPrice")
+const pizzaPrice = document.getElementById("pizzaPrice")
+const phonePrice = document.getElementById("phonePrice")
+const willPrice = document.getElementById("willPrice")
+const markPrice = document.getElementById("markPrice")
+const goldPrice = document.getElementById("goldPrice")
+
 
 let numberOfCookies = 0;
 let costOfClickUpgrade = 20;
@@ -27,6 +34,7 @@ autoClickerUpgrade3.onclick = () => {
         autoclicker3Cost *= 2;
         autoClickerUpgrade.innerText = "Buy Freddy: " + autoclicker3Cost;
         counter.innerHTML = "FazCoins: " + numberOfCookies;
+        goldPrice.innerText = "Cost: " + autoclicker3Cost;
         autoClickIncrease3++;
         autoClickIncrease3 += 199;
         clearInterval(autoclicker)
@@ -47,6 +55,7 @@ autoClickerUpgrade2.onclick = () => {
         autoclicker2Cost *= 2;
         autoClickerUpgrade.innerText = "Buy Markiplier upgrade: " + autoclicker2Cost;
         counter.innerHTML = "FazCoins: " + numberOfCookies;
+        markPrice.innerText = "Cost: " + autoclicker2Cost;
         autoClickIncrease2++;
         autoClickIncrease2 += 9;
         clearInterval(autoclicker)
@@ -67,6 +76,7 @@ autoClickerUpgrade.onclick = () => {
         autoclickerCost *= 2;
         autoClickerUpgrade.innerText = "Buy William upgrade: " + autoclickerCost;
         counter.innerHTML = "FazCoins: " + numberOfCookies;
+        willPrice.innerText = "Cost: " + autoclickerCost;
         autoClickIncrease++;
         autoClickIncrease += 0;
         clearInterval(autoclicker)
@@ -96,6 +106,7 @@ clickUpgrade.onclick = () => {
         costOfClickUpgrade *= 2;
         counter.innerText = "FazCoins: " + numberOfCookies;
         clickUpgradeIncrease++;
+        micPrice.innerText = "Cost: " + costOfClickUpgrade;
     }
 };
 
@@ -105,15 +116,17 @@ clickUpgrade2.onclick = () => {
         costOfClickUpgrade2 *= 2;
         counter.innerText = "FazCoins: " + numberOfCookies;
         clickUpgradeIncrease += 24;
+        pizzaPrice.innerText = "Cost: " + costOfClickUpgrade2;
     }
 };
 
 clickUpgrade3.onclick = () => {
     if (numberOfCookies >= costOfClickUpgrade3){
         numberOfCookies -= costOfClickUpgrade3;
-        costOfClickUpgrade2 *= 2;
+        costOfClickUpgrade3 *= 2;
         counter.innerText = "FazCoins: " + numberOfCookies;
         clickUpgradeIncrease += 199;
+        phonePrice.innerText = "Cost: " + costOfClickUpgrade3;
     }
 };
 
@@ -124,9 +137,3 @@ function cheats() {
     numberOfCookies += 1000000;
    counter.innerText = "FazCoins: " + numberOfCookies;
 };
-
-const cheatsTwo = () => {
-    numberOfCookies *= 2;
-    counter.innerText = "FazCoins: " + numberOfCookies;
-}
-cheats();
